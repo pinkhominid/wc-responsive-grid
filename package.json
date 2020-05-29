@@ -1,0 +1,49 @@
+{
+  "name": "wc-responsive-grid",
+  "version": "0.0.0",
+  "description": "Web component to simplify responsive content area layout using CSS Grid",
+  "main": "wc-responsive-grid.js",
+  "module": "wc-responsive-grid.js",
+  "directories": {
+    "example": "example"
+  },
+  "files": [
+    "/wc-responsive-grid.js"
+  ],
+  "dependencies": {
+    "lit-element": "^2.3.1",
+    "wc-responsive-container": "^1.0.1"
+  },
+  "devDependencies": {
+    "es-module-shims": "^0.4.6",
+    "http-server": "^0.12.3"
+  },
+  "scripts": {
+    "start": "http-server -o example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pinkhominid/wc-responsive-grid.git"
+  },
+  "keywords": [
+    "webcomponents",
+    "web",
+    "component",
+    "wc",
+    "container",
+    "media",
+    "queries",
+    "query",
+    "responsive",
+    "css",
+    "grid",
+    "content",
+    "layout"
+  ],
+  "author": "pinkhominid <pinkhominid@birdbomb.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pinkhominid/wc-responsive-grid/issues"
+  },
+  "homepage": "https://github.com/pinkhominid/wc-responsive-grid#readme"
+}
