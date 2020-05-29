@@ -1,6 +1,6 @@
 {
   "name": "wc-responsive-grid",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Web component to simplify responsive content area layout using CSS Grid",
   "main": "wc-responsive-grid.js",
   "module": "wc-responsive-grid.js",
