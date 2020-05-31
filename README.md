@@ -19,7 +19,6 @@ npm i wc-responsive-grid
   }
   article {
     width: 85%;
-    height: 85vh;
     margin: 50px auto;
   }
   section {
@@ -28,8 +27,11 @@ npm i wc-responsive-grid
     padding: var(--wc-responsive-grid-gap);
   }
   wc-responsive-grid {
-    padding: var(--wc-responsive-grid-gap, 2rem);
+    padding: var(--wc-responsive-grid-gap);
     outline: 3px dotted skyblue;
+  }
+  wc-responsive-grid.lg > section {
+    min-height: 200px;
   }
 </style>
 <script type="module">
@@ -106,14 +108,11 @@ npm i wc-responsive-grid
       <section xl-span="r1 c1">
         2
       </section>
-      <section xl-span="r1 c1">
+      <section xl-span="r2 c1">
         3
       </section>
       <section xl-span="r1 c2">
         4
-      </section>
-      <section xl-span="r1 c1">
-        5
       </section>
     </wc-responsive-grid>
   </article>

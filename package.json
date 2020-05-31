@@ -12,7 +12,7 @@
   ],
   "dependencies": {
     "lit-element": "^2.3.1",
-    "wc-responsive-container": "^1.0.1"
+    "wc-responsive-container": "^1.1.0"
   },
   "devDependencies": {
     "es-module-shims": "^0.4.6",
