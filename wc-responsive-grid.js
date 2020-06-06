@@ -9,8 +9,6 @@
  */
 
 import { LitElement, html, css } from 'lit-element';
-import { ifDefined } from 'lit-html/directives/if-defined.js';
-
 import { ResponsiveElementMixin } from 'wc-responsive-container';
 
 class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
