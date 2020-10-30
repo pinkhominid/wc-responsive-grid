@@ -35,6 +35,12 @@ class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
       :host(.xl[xl-tmpl~="c3"]) {
         grid-template-columns: repeat(3, 1fr);
       }
+      :host(.sm[sm-tmpl~="c4"]),
+      :host(.md[md-tmpl~="c4"]),
+      :host(.lg[lg-tmpl~="c4"]),
+      :host(.xl[xl-tmpl~="c4"]) {
+        grid-template-columns: repeat(4, 1fr);
+      }
       ::slotted(*) {
         box-sizing: border-box;
       }
@@ -55,6 +61,12 @@ class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
       :host(.lg) > ::slotted([lg-span~="c3"]),
       :host(.xl) > ::slotted([xl-span~="c3"]) {
         grid-column: span 3;
+      }
+      :host(.sm) > ::slotted([sm-span~="c4"]),
+      :host(.md) > ::slotted([md-span~="c4"]),
+      :host(.lg) > ::slotted([lg-span~="c4"]),
+      :host(.xl) > ::slotted([xl-span~="c4"]) {
+        grid-column: span 4;
       }
     `;
   }
