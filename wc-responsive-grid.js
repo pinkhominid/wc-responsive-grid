@@ -16,12 +16,14 @@ class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
     return css`
       :host {
         display: block;
-        box-sizing: border-box;
         display: grid;
         grid-gap: var(--wc-responsive-grid-gap, 2rem);
       }
       :host([hidden]) {
         display: none;
+      }
+      * {
+        box-sizing: border-box;
       }
       :host(.sm[sm-tmpl~="c2"]),
       :host(.md[md-tmpl~="c2"]),
@@ -40,9 +42,6 @@ class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
       :host(.lg[lg-tmpl~="c4"]),
       :host(.xl[xl-tmpl~="c4"]) {
         grid-template-columns: repeat(4, 1fr);
-      }
-      ::slotted(*) {
-        box-sizing: border-box;
       }
       :host(.sm) ::slotted([sm-span~="r2"]),
       :host(.md) > ::slotted([md-span~="r2"]),
