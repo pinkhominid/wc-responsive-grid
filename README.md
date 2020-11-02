@@ -35,14 +35,8 @@ npm i wc-responsive-grid
   }
 </style>
 <script type="module">
-  // Using es-dev-server or your favorite bundler...
+  // Using @web/dev-server or your favorite bundler...
   import 'wc-responsive-grid';
-
-  // ...or Snowpack
-  // import '/web_modules/wc-responsive-grid.js';
-
-  // ...or Import Maps
-  // See example/index.html
 </script>
 <body>
   <article>
