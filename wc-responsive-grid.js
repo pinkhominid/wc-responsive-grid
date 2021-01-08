@@ -15,7 +15,6 @@ class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
   static get styles() {
     return css`
       :host {
-        display: block;
         display: grid;
         grid-gap: var(--wc-responsive-grid-gap, 2rem);
       }
