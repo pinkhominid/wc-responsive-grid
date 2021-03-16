@@ -16,10 +16,12 @@ class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
   static get styles() {
     return css`
       :host {
-        display: grid;
-        grid-gap: var(--wc-responsive-grid-gap, 2rem);
         /* Prevent grid blowout via min 0 (https://css-tricks.com/preventing-a-grid-blowout/) */
         --wc-responsive-grid-col-size: minmax(0, 1fr);
+
+        display: grid;
+        grid-gap: var(--wc-responsive-grid-gap, 2rem);
+        grid-template-columns: var(--wc-responsive-grid-col-size);
       }
       :host([hidden]) {
         display: none;
