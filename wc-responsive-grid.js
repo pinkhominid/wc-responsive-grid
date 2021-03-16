@@ -5,6 +5,7 @@
  *
  * CSS Vars and defaults
  * --wc-responsive-grid-gap: 2rem;
+ * --wc-responsive-grid-col-size: minmax(0, 1fr);
  * default breaks = {sm: 384, md: 576, lg: 768, xl: 960};
  */
 
@@ -17,6 +18,8 @@ class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
       :host {
         display: grid;
         grid-gap: var(--wc-responsive-grid-gap, 2rem);
+        /* Prevent grid blowout via min 0 (https://css-tricks.com/preventing-a-grid-blowout/) */
+        --wc-responsive-grid-col-size: minmax(0, 1fr);
       }
       :host([hidden]) {
         display: none;
@@ -28,19 +31,19 @@ class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
       :host(.md[md-tmpl~="c2"]),
       :host(.lg[lg-tmpl~="c2"]),
       :host(.xl[xl-tmpl~="c2"]) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, var(--wc-responsive-grid-col-size));
       }
       :host(.sm[sm-tmpl~="c3"]),
       :host(.md[md-tmpl~="c3"]),
       :host(.lg[lg-tmpl~="c3"]),
       :host(.xl[xl-tmpl~="c3"]) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, var(--wc-responsive-grid-col-size));
       }
       :host(.sm[sm-tmpl~="c4"]),
       :host(.md[md-tmpl~="c4"]),
       :host(.lg[lg-tmpl~="c4"]),
       :host(.xl[xl-tmpl~="c4"]) {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, var(--wc-responsive-grid-col-size));
       }
       :host(.sm) ::slotted([sm-span~="r2"]),
       :host(.md) > ::slotted([md-span~="r2"]),
