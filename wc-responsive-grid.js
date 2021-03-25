@@ -81,4 +81,9 @@ class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
   }
 }
 
-self.customElements.define('wc-responsive-grid', ResponsiveGridElement);
+if (self.customElements.get('wc-responsive-grid')) {
+  self.console.warn(`'wc-responsive-grid' has already been defined as a custom element`);
+} else {
+  self.customElements.define('wc-responsive-grid', ResponsiveGridElement);
+}
+
