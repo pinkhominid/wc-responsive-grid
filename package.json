@@ -13,7 +13,7 @@
     "/wc-responsive-grid.js"
   ],
   "dependencies": {
-    "lit-element": "^2.0.0",
+    "lit": "^2.0.0-rc.3",
     "wc-responsive-container": "^1.3.5"
   },
   "devDependencies": {

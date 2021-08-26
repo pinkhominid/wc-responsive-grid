@@ -9,7 +9,7 @@
  * default breaks = {sm: 384, md: 576, lg: 768, xl: 960};
  */
 
-import { LitElement, html, css } from 'lit-element';
+import { LitElement, html, css } from 'lit';
 import { ResponsiveElementMixin } from 'wc-responsive-container';
 
 class ResponsiveGridElement extends ResponsiveElementMixin(LitElement) {
